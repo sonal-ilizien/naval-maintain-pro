@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import ShipFitDetails from "./pages/ShipFitDetails";
 import MaintenanceOperations from "./pages/MaintenanceOperations";
+import DefectsAndRoutine from "./pages/DefectsAndRoutine";
 import NotFound from "./pages/NotFound";
 import MainLayout from "./components/MainLayout";
 
@@ -77,18 +78,15 @@ const App = () => (
             </ProtectedRoute>
           } />
           
-          {/* Add placeholder routes for other modules */}
           <Route path="/dart" element={
             <ProtectedRoute>
               <MainLayout>
-                <div className="p-4">
-                  <h1 className="text-2xl font-bold mb-4">Defects and Routine (DART)</h1>
-                  <p>This module is under development.</p>
-                </div>
+                <DefectsAndRoutine />
               </MainLayout>
             </ProtectedRoute>
           } />
           
+          {/* Add placeholder routes for other modules */}
           <Route path="/srar" element={
             <ProtectedRoute>
               <MainLayout>
