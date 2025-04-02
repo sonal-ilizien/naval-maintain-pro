@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Navy theme specific colors
+				navy: {
+					50: '#E8EBF7',
+					100: '#C5D0E6',
+					200: '#94A9D0',
+					300: '#6283BA',
+					400: '#4A6FA5',
+					500: '#365487',
+					600: '#2A4169',
+					700: '#1E3050',
+					800: '#122038',
+					900: '#0A1220',
+					950: '#060C14'
+				},
+				alert: {
+					DEFAULT: '#CC0000',
+					subtle: '#FEE2E2'
 				}
 			},
 			borderRadius: {
@@ -84,11 +103,31 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-out': {
+					'0%': {
+						opacity: '1'
+					},
+					'100%': {
+						opacity: '0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'fade-out': 'fade-out 0.3s ease-out'
 			}
 		}
 	},
