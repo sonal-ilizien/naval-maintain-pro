@@ -46,7 +46,7 @@ const Login = () => {
       <div className="absolute inset-0 z-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1652424158445-7d97fa67b6a6?q=80&w=1664&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat"></div>
       <div className="container relative z-10 mx-auto px-4 h-full flex flex-col items-center justify-center">
         <div className="text-center mb-6 animate-fade-in">
-          <h1 className="text-3xl font-bold text-white mb-2">Naval Fleet Maintenance Management</h1>
+          <h1 className="text-3xl font-bold text-white mb-2">Naval Fleet Maintenance Management System</h1>
           <p className="text-navy-100">Comprehensive Maintenance and Management System</p>
         </div>
 
